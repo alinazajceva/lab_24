@@ -1,0 +1,73 @@
+body,
+h2,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-image: url(images/fon1.jpg);
+    background-repeat: no-repeat center center fixed;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+  color: #000;
+  font-family: Helvetica, sans-serif;
+}
+
+#book {
+  background: #fa8211;
+  position: absolute;
+  width: 900px;
+  height: 500px;
+  left: 50%;
+  top: 30%;
+  margin-left: -430px;
+  margin-top: -125px;
+}
+
+.page1{
+   justify-content: center;
+    text-align: center;
+}
+
+.img_page{
+   padding-top: 15px; 
+}
+
+
+#pages section {
+  background: white;
+  display: block;
+  width: 500px;
+  height: 490px;
+  position: absolute;
+  left: 415px;
+  top: 5px;
+  overflow: hidden;
+}
+#pages section > div {
+  display: block;
+  width: 500px;
+  height: 490px;
+  font-size: 14px;
+}
+#pages section p,
+#pages section h2 {
+  padding: 3px 35px;
+  line-height: 1.4em;
+  text-align: justify;
+}
+#pages section h2 {
+  margin: 15px 0 10px;
+}
+
+#pages section h3 {
+    text-align: center;
+}
+
+#pageflip-canvas {
+  position: absolute;
+  z-index: 100;
+}

@@ -1,0 +1,149 @@
+body{
+    background-image: url(images/fon4.jpg);
+    background-repeat: no-repeat center center fixed;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+}
+
+a{
+    text-decoration: none;
+}
+
+.link{
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 16px;
+    text-align: center;
+}
+
+@import url("https://fonts.googleapis.com/css?family=Lato:400,700");
+* {
+  box-sizing: border-box;
+}
+
+
+
+body {
+  font-family: "Lato", sans-serif;
+  color: #fff;
+}
+
+.container {
+    
+  width: auto;
+  display: inline-block;
+  display: -webkit-box;
+  -webkit-box-align: center;
+          align-items: center;
+  align-content: center;
+  -webkit-box-pack: center;
+          justify-content: center;
+    text-align: center;
+    margin-top: 14%;
+}
+
+@-webkit-keyframes topAnimation {
+  from {
+    -webkit-transform: translate(0rem, 0);
+            transform: translate(0rem, 0);
+  }
+  to {
+    -webkit-transform: translate(0rem, 3.5rem);
+            transform: translate(0rem, 3.5rem);
+  }
+}
+
+@keyframes topAnimation {
+  from {
+    -webkit-transform: translate(0rem, 0);
+            transform: translate(0rem, 0);
+  }
+  to {
+    -webkit-transform: translate(0rem, 3.5rem);
+            transform: translate(0rem, 3.5rem);
+  }
+}
+@-webkit-keyframes bottomAnimation {
+  from {
+    -webkit-transform: translate(-11.5rem, 0);
+            transform: translate(-11.5rem, 0);
+  }
+  to {
+    -webkit-transform: translate(0rem, 0);
+            transform: translate(0rem, 0);
+  }
+}
+@keyframes bottomAnimation {
+  from {
+    -webkit-transform: translate(-11.5rem, 0);
+            transform: translate(-11.5rem, 0);
+  }
+  to {
+    -webkit-transform: translate(0rem, 0);
+            transform: translate(0rem, 0);
+  }
+}
+button.btn {
+  text-transform: uppercase;
+  text-decoration: none;
+  font-weight: 700;
+  border: 0;
+  position: relative;
+  letter-spacing: 0.15em;
+  margin: 0 auto;
+  margin-bottom: 4%;
+  padding: 1rem 2.5rem;
+  background: transparent;
+  outline: none;
+  font-size: 24px;
+  color: #fff;
+    cursor: pointer;
+  -webkit-transition: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55) 0.15s;
+  transition: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55) 0.15s;
+}
+button.btn::after, button.btn::before {
+  border: 0;
+  content: "";
+  position: absolute;
+  height: 40%;
+  width: 10%;
+  -webkit-transition: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  transition: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  z-index: -2;
+  border-radius: 50%;
+}
+button.btn::before {
+  border: 0;
+  background-color: #f58505;
+  top: -0.75rem;
+  left: 0.5rem;
+  -webkit-animation: topAnimation 2s cubic-bezier(0.68, -0.55, 0.265, 1.55) 0.25s infinite alternate;
+          animation: topAnimation 2s cubic-bezier(0.68, -0.55, 0.265, 1.55) 0.25s infinite alternate;
+}
+button.btn::after {
+  background-color: #ffa136;
+  top: 3rem;
+  left: 13rem;
+  -webkit-animation: bottomAnimation 2s cubic-bezier(0.68, -0.55, 0.265, 1.55) 0.5s infinite alternate;
+          animation: bottomAnimation 2s cubic-bezier(0.68, -0.55, 0.265, 1.55) 0.5s infinite alternate;
+}
+button.btn:hover {
+  color: white;
+}
+button.btn:hover::before, button.btn:hover::after {
+  top: 0;
+  height: 100%;
+  width: 100%;
+  border-radius: 0;
+  -webkit-animation: none;
+          animation: none;
+}
+button.btn:hover::after {
+  left: 0rem;
+}
+button.btn:hover::before {
+  top: 0.5rem;
+  left: 0.35rem;
+}
